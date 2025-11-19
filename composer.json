@@ -1,0 +1,32 @@
+{
+    "name": "hryvinskyi/magento2-store-matcher",
+    "description": "Automatic store/website code matcher for multi-store Magento 2 setup based on HTTP_HOST",
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Volodymyr Hryvinskyi",
+            "email": "volodymyr@hryvinskyi.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hryvinskyi\\StoreMatcher\\": "src/"
+        },
+        "files": [
+            "src/autoload.php"
+        ]
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "@php src/install.php"
+        ],
+        "post-update-cmd": [
+            "@php src/install.php"
+        ]
+    }
+}
