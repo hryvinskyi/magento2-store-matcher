@@ -2,6 +2,15 @@
 
 Automatic store/website code matcher for multi-store Magento 2 / Adobe Commerce setups based on HTTP_HOST.
 
+[![Latest Stable Version](https://poser.pugx.org/hryvinskyi/magento2-store-matcher/v/stable)](https://packagist.org/packages/hryvinskyi/magento2-store-matcher)
+[![Total Downloads](https://poser.pugx.org/hryvinskyi/magento2-store-matcher/downloads)](https://packagist.org/packages/hryvinskyi/magento2-store-matcher)
+[![PayPal donate button](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=volodymyr%40hryvinskyi%2ecom&lc=UA&item_name=Magento%202%20Defer%20Javascript&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted "Donate once-off to this project using Paypal")
+[![Latest Unstable Version](https://poser.pugx.org/hryvinskyi/magento2-store-matcher/v/unstable)](https://packagist.org/packages/oakcms/oakcms)
+[![License](https://poser.pugx.org/hryvinskyi/magento2-store-matcher/license)](https://packagist.org/packages/hryvinskyi/magento2-store-matcher)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/hryvinskyi/magento2-store-matcher/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/hryvinskyi/magento2-store-matcher/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/hryvinskyi/magento2-store-matcher/badges/build.png?b=master)](https://scrutinizer-ci.com/g/hryvinskyi/magento2-store-matcher/build-status/master)
+
+
 ## Overview
 
 This Composer package automatically sets the correct Magento store or website code based on the incoming HTTP_HOST header,
@@ -10,9 +19,8 @@ eliminating the need to manually configure store matching in `pub/index.php`.
 ## Features
 
 - **Zero configuration** - Works automatically after installation
-- **Performance optimized** - Configuration cached in static variable
+- **Performance optimized** - Stores/Websites can be cached by opcache (static array in app/etc/store-hosts.php)
 - **Local overrides** - Support for environment-specific configuration
-- **Clean separation** - Keeps `pub/index.php` clean and maintainable
 - **Composer autoload** - Uses standard Composer autoload mechanism
 
 ## Installation
